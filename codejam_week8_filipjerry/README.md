@@ -1,0 +1,7 @@
+# This project was made for Week 8’s Code Jam. It’s a small program that simulates 30 golf rounds and connects them with real weather data using the Open-Meteo API. The idea was to take what we learned in Chapters 15–17 of Python Crash Course—generating data, downloading data, and using APIs—and use it all in one simple project.
+
+# The program randomly creates golf scores and a “strokes gained” value for each round, which shows if you played better or worse compared to average. Then it downloads real weather info for the same days, like temperature and wind speed. After that, it merges everything together so each golf round is matched with that day’s weather.
+
+# In the Excel file, each row represents one round of golf. The “round” column is just the round number (1–30). “score” is the number of strokes you shot that day—lower scores mean you played better. “strokes_gained” is a small number that shows improvement or decline between rounds. “date” shows the day of the round. “tmax” and “tmin” are the highest and lowest temperatures that day, “tavg” is the average of those two, and “windmax” is how strong the wind was (measured in meters per second). Basically, the Excel shows your performance next to real weather conditions, so you can see if things like wind or heat affected your scores.
+
+# The program also makes a few charts automatically, like your score trend over time, how wind speed affects score, and a histogram that shows how often certain scores appear. Everything saves neatly in a “data/processed” folder as both a CSV and Excel file.
